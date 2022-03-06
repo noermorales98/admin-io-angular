@@ -7,6 +7,7 @@ import { RegisterComponent } from './pages/register/register.component';
 import { WorkgroupComponent } from './pages/workgroup/workgroup.component';
 import { CreateWorkgroupComponent } from './pages/create-workgroup/create-workgroup.component';
 import { InfoTaskComponent } from './pages/info-task/info-task.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,7 +18,8 @@ import { InfoTaskComponent } from './pages/info-task/info-task.component';
     InfoTaskComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
