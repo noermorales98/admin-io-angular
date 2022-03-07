@@ -1,0 +1,53 @@
+/*TODO EL CONTENIDO*/
+.content {
+  display: flex;
+  margin-left: 80px;
+  margin-right: 80px;
+  height: 100%;
+}
+h2{
+  font-size: 60px;
+  margin: 0px;
+}
+/*Para que el titulo en azul
+no este separado*/
+p{
+  margin: 10px;
+}
+/*Ajustando el tamaño de la imagen*/
+.content img{
+  margin-top: 150px;
+  width: 1000px;
+}
+/*El contenido de los textos*/
+.textos{
+  margin-top: 150px;
+  float: left;
+}
+/*texto principal en azul*/
+#azul{
+  color: #092CAE;
+}
+/*poniendo la imagen a la derecha*/
+.imagen{
+  float: right;
+  margin-bottom: 100px;
+}
+/*boton de ENTRAR*/
+button{
+  margin: 10px 10px 10px 10px;
+  border-width:0;
+  width: 100px;
+  height: 40px;
+  left: 80px;
+  top: 686px;
+  color: white;
+  font-weight: 700;
+  background: #092CAE;
+  border-radius: 20px;
+}
+/*al hacer clic rn boton ENTRAR*/
+button:active{
+  background: #000;
+}
+

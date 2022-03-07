@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {MatIconModule} from '@angular/material/icon'
+
 
 @Component({
   selector: 'app-home',
@@ -6,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
+
+  title = 'Admin.io'
 
   constructor() { }
 

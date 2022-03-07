@@ -8,6 +8,8 @@ import { WorkgroupComponent } from './pages/workgroup/workgroup.component';
 import { CreateWorkgroupComponent } from './pages/create-workgroup/create-workgroup.component';
 import { InfoTaskComponent } from './pages/info-task/info-task.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HeaderComponent } from './pages/home/header/header.component';
+import {MatIconModule} from "@angular/material/icon";
 @NgModule({
   declarations: [
     AppComponent,
@@ -15,12 +17,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     RegisterComponent,
     WorkgroupComponent,
     CreateWorkgroupComponent,
-    InfoTaskComponent
+    InfoTaskComponent,
+    HeaderComponent
   ],
-  imports: [
-    BrowserModule,
-    BrowserAnimationsModule
-  ],
+    imports: [
+        BrowserModule,
+        BrowserAnimationsModule,
+        MatIconModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })
