@@ -16,6 +16,8 @@ p{
   width: 70%;
 }
 
+
+
 /*DIV TEXTOS*/
 /*El contenido de los textos*/
 .textos{
@@ -62,6 +64,7 @@ button{
 button:active{
   background: #000;
 }
+
 
 @media screen and (max-width: 858px){
   /*TODO EL CONTENIDO*/

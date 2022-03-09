@@ -13,6 +13,9 @@ import {MatIconModule} from "@angular/material/icon";
 import {RouterTestingModule} from "@angular/router/testing";
 import { AppRoutingModule } from './app-routing.module';
 import {WorkgroupModule} from "./pages/workgroup/workgroup.module";
+import { AboutComponent } from './pages/about/about.component';
+import { ContactComponent } from './pages/contact/contact.component';
+import { ServicesComponent } from './pages/services/services.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,16 +25,22 @@ import {WorkgroupModule} from "./pages/workgroup/workgroup.module";
     CreateWorkgroupComponent,
     InfoTaskComponent,
     HeaderComponent,
+    AboutComponent,
+    ContactComponent,
+    ServicesComponent,
   ],
-    imports: [
-        BrowserModule,
-        BrowserAnimationsModule,
-        MatIconModule,
-        RouterTestingModule,
-        AppRoutingModule,
-        WorkgroupModule
-    ],
+  imports: [
+    BrowserModule,
+    BrowserAnimationsModule,
+    MatIconModule,
+    RouterTestingModule,
+    AppRoutingModule,
+    WorkgroupModule
+  ],
   providers: [],
+  exports: [
+    HeaderComponent
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
