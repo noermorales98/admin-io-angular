@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import {MatIconModule} from '@angular/material/icon'
 
+const hola = () =>{
+  // @ts-ignore
+  this.route.navigate(['/register'])
+}
 
 @Component({
   selector: 'app-home',
@@ -9,11 +12,18 @@ import {MatIconModule} from '@angular/material/icon'
 })
 export class HomeComponent implements OnInit {
 
-  title = 'Admin.io'
+  title = 'Admin.io';
+  redirigir: Redi[]=[{
+    redirectTo: '/login'
+  }];
+
 
   constructor() { }
 
   ngOnInit(): void {
   }
+}
 
+export interface Redi{
+  redirectTo: string;
 }

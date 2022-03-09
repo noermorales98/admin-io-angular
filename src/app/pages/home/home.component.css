@@ -1,9 +1,9 @@
 /*TODO EL CONTENIDO*/
 .content {
   display: flex;
-  margin-left: 80px;
-  margin-right: 80px;
-  height: 100%;
+  margin-left: 150px;
+  margin-right: 150px;
+
 }
 h2{
   font-size: 60px;
@@ -13,26 +13,38 @@ h2{
 no este separado*/
 p{
   margin: 10px;
+  width: 70%;
 }
-/*Ajustando el tamaño de la imagen*/
-.content img{
-  margin-top: 150px;
-  width: 1000px;
-}
+
+/*DIV TEXTOS*/
 /*El contenido de los textos*/
 .textos{
   margin-top: 150px;
   float: left;
+  width: 60%;
 }
+
+/*DIV IMAGEN*/
+.imagen{
+  margin-top: 100px;
+  float: right;
+  width: 40%;
+}
+
+/*###################################################*/
+/*APLICANDO ESTILOS*/
 /*texto principal en azul*/
 #azul{
   color: #092CAE;
 }
-/*poniendo la imagen a la derecha*/
-.imagen{
-  float: right;
-  margin-bottom: 100px;
+
+/*Ajustando el tamaño de la imagen*/
+.content img{
+  /* margin-left: 150px; */
+  display:block;
+  height: 500px;
 }
+
 /*boton de ENTRAR*/
 button{
   margin: 10px 10px 10px 10px;
@@ -46,8 +58,57 @@ button{
   background: #092CAE;
   border-radius: 20px;
 }
-/*al hacer clic rn boton ENTRAR*/
+/*Efecto al hacer clic rn boton ENTRAR*/
 button:active{
   background: #000;
 }
 
+@media screen and (max-width: 858px){
+  /*TODO EL CONTENIDO*/
+  .content {
+    display:inline-block;
+    margin-left: 30px;
+    margin-right: 30px;
+    height: 100%;
+
+  }
+  /*DIV TEXTOS*/
+  /*El contenido de los textos*/
+  .textos{
+    margin-top: 80px;
+    float:none;
+    margin-right: 0px;
+    width: 100%;
+    margin-bottom: 0px;
+  }
+  h2{
+    font-size: 50px;
+    margin: 0px;
+  }
+
+  /*DIV IMAGEN*/
+  .imagen{
+    margin-top: 0px;
+    float:none;
+    width: 100%;
+
+  }
+  .content img{
+    /* margin-left: 150px; */
+    display:block;
+    height: 230px;
+  }
+
+  button{
+    margin: 10px 0px 0px 0px;
+    border-width:0;
+    width: 100px;
+    height: 40px;
+    left: 80px;
+    top: 0px;
+    color: white;
+    font-weight: 700;
+    background: #092CAE;
+    border-radius: 20px;
+  }
+}
