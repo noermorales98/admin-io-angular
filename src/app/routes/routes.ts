@@ -11,9 +11,16 @@ import {WorkgroupComponent} from "../pages/workgroup/workgroup.component";
 
 
 export const routes = [
-  {path: '', component: LoginComponent},
+  {path: '', component: LayoutComponent, children: [
+      {path:'', component: HomeComponent},
+      {path:'about', component: AboutComponent},
+      {path: 'contact', component: ContactComponent},
+      {path: 'register', component: RegisterComponent},
+      {path: 'services',component: ServicesComponent},
+      {path: 'home',component: HomeComponent}
+    ]},
   {
-    path: 'barra',
+    path: 'home',
     component: LayoutComponent,
     children: [
       {path:'', component: HomeComponent},
@@ -23,10 +30,11 @@ export const routes = [
       {path: 'info-task', component: InfoTaskComponent},
       {path: 'register', component: RegisterComponent},
       {path: 'services',component: ServicesComponent},
-      {path: 'workgroup', component: WorkgroupComponent}
+      {path: 'workgroup', component: WorkgroupComponent},
+      {path: 'history', component: HomeComponent}
     ]
   },
   //not lazy load component
-  {path: 'login', component: LoginComponent},
-  {path: '**', redirectTo: 'home'}
+  {path: 'home/login', component: LoginComponent},
+  {path: 'home', redirectTo: 'home'},
 ];

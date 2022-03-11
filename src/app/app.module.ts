@@ -5,7 +5,7 @@ import {PagesModule} from "./pages/pages.module";
 import {RoutesModule} from "./routes/routes.module";
 import {RouterModule} from "@angular/router";
 import {LayoutModule} from "./layout/layout.module";
-import {HomeModule} from "./pages/home/home.module";
+import {AppRoutingModule} from "./app-routing.module";
 
 
 @NgModule({
@@ -16,10 +16,9 @@ import {HomeModule} from "./pages/home/home.module";
     RoutesModule,
     RouterModule,
     LayoutModule,
-    HomeModule
+    AppRoutingModule
   ],
   providers: [],
-  exports: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

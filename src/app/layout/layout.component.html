@@ -1,12 +1,14 @@
 <nav class="menu">
   <label class="logo"><a href="/" id="logo1">Admin.io</a></label>
   <ul class="menu_items">
-    <li><a routerLink="/about">Acerca de</a></li>
-    <li><a routerLink="/contact">Contáctanos</a></li>
-    <li><a routerLink="/services">Servicios</a></li>
-    <li class="active"><a id="circular" routerLink="/register">Regístrate</a></li>
+    <li><a routerLink="about">Acerca de</a></li>
+    <li><a routerLink="contact">Contáctanos</a></li>
+    <li><a routerLink="services">Servicios</a></li>
+    <li class="active"><a id="circular" routerLink="register">Regístrate</a></li>
   </ul>
   <span class="btn_menu">
         <i class="bi bi-list"></i>
     </span>
 </nav>
+
+<router-outlet></router-outlet>
