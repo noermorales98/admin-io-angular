@@ -1,27 +1,35 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import {HomeRoutingModule} from "./home-routing.module";
-// @ts-ignore
-import { AboutComponent } from './info/about/about.component';
-// @ts-ignore
-import { ContactComponent } from './info/contact/contact.component';
-// @ts-ignore
-import { ServicesComponent } from './info/services/services.component';
-import {AppModule} from "../../app.module";
-import {HeaderModule} from "./header/header.module";
+import {HomeComponent} from "./home.component";
+import {MatIconModule} from "@angular/material/icon";
+import {AboutModule} from "../about/about.module";
+import {ContactModule} from "../contact/contact.module";
+import {CreateWorkgroupModule} from "../create-workgroup/create-workgroup.module";
+import {InfoTaskModule} from "../info-task/info-task.module";
+import {RegisterModule} from "../register/register.module";
+import {ServicesModule} from "../services/services.module";
+import {WorkgroupModule} from "../workgroup/workgroup.module";
+import {RouterModule} from "@angular/router";
 
 
 @NgModule({
   declarations: [
-    AboutComponent,
-    ContactComponent,
-    ServicesComponent,
+    //el unico que va
+    HomeComponent
   ],
-  imports: [
+  exports: [
+    HomeComponent
+  ],
+  imports: [ //hijos
     CommonModule,
-    HomeRoutingModule,
-    AppModule,
-    HeaderModule
+    AboutModule,
+    ContactModule,
+    CreateWorkgroupModule,
+    InfoTaskModule,
+    RegisterModule,
+    ServicesModule,
+    WorkgroupModule,
+    RouterModule
   ]
 })
 export class HomeModule { }

@@ -13,8 +13,7 @@ import {MatIconModule} from "@angular/material/icon";
         Header2Component
     ],
   imports: [
-    CommonModule,
-    MatIconModule
+    CommonModule
   ]
 })
 export class WorkgroupModule { }
