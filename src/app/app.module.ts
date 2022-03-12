@@ -6,6 +6,7 @@ import {RoutesModule} from "./routes/routes.module";
 import {RouterModule} from "@angular/router";
 import {LayoutModule} from "./layout/layout.module";
 import {AppRoutingModule} from "./app-routing.module";
+import { MatIconModule } from '@angular/material/icon';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import {AppRoutingModule} from "./app-routing.module";
     RoutesModule,
     RouterModule,
     LayoutModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]

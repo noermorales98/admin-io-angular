@@ -13,7 +13,7 @@ export class HomeComponent implements OnInit {
 
 
   constructor(private router: Router) {
-    this.router.navigate(['/history'])
+    this.router.navigate([''])
   }
 
   ngOnInit(): void {

@@ -11,30 +11,18 @@ import {WorkgroupComponent} from "../pages/workgroup/workgroup.component";
 
 
 export const routes = [
+
+  //home
   {path: '', component: LayoutComponent, children: [
       {path:'', component: HomeComponent},
       {path:'about', component: AboutComponent},
       {path: 'contact', component: ContactComponent},
-      {path: 'register', component: RegisterComponent},
       {path: 'services',component: ServicesComponent},
-      {path: 'home',component: HomeComponent}
+      {path: 'home',component: HomeComponent},
     ]},
-  {
-    path: 'home',
-    component: LayoutComponent,
-    children: [
-      {path:'', component: HomeComponent},
-      {path:'about', component: AboutComponent},
-      {path: 'contact', component: ContactComponent},
-      {path: 'create', component: CreateWorkgroupComponent},
-      {path: 'info-task', component: InfoTaskComponent},
-      {path: 'register', component: RegisterComponent},
-      {path: 'services',component: ServicesComponent},
-      {path: 'workgroup', component: WorkgroupComponent},
-      {path: 'history', component: HomeComponent}
-    ]
-  },
-  //not lazy load component
-  {path: 'home/login', component: LoginComponent},
-  {path: 'home', redirectTo: 'home'},
+  //login
+  {path: 'login', component: LoginComponent},
+  //login sucesfull
+  {path: 'groups', component: WorkgroupComponent},
+  {path: 'register', component: RegisterComponent}
 ];

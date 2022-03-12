@@ -7,6 +7,7 @@ import {InfoTaskModule} from "./info-task/info-task.module";
 import {RegisterModule} from "./register/register.module";
 import {ServicesModule} from "./services/services.module";
 import {WorkgroupModule} from "./workgroup/workgroup.module";
+import {RouterModule} from "@angular/router";
 
 
 
@@ -20,7 +21,8 @@ import {WorkgroupModule} from "./workgroup/workgroup.module";
     InfoTaskModule,
     RegisterModule,
     ServicesModule,
-    WorkgroupModule
+    WorkgroupModule,
+    RouterModule
   ]
 })
 export class PagesModule { }
