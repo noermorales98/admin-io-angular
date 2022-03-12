@@ -8,6 +8,7 @@ import {InfoTaskComponent} from "../pages/info-task/info-task.component";
 import {RegisterComponent} from "../pages/register/register.component";
 import {ServicesComponent} from "../pages/services/services.component";
 import {WorkgroupComponent} from "../pages/workgroup/workgroup.component";
+import {HeaderComponent} from "../layout/header/header.component";
 
 
 export const routes = [
@@ -23,6 +24,8 @@ export const routes = [
   //login
   {path: 'login', component: LoginComponent},
   //login sucesfull
-  {path: 'groups', component: WorkgroupComponent},
+  {path: 'groups', component: HeaderComponent, children: [
+      {path: '', component: WorkgroupComponent}
+    ]},
   {path: 'register', component: RegisterComponent}
 ];

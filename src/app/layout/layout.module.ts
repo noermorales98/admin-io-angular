@@ -3,9 +3,10 @@ import { CommonModule } from '@angular/common';
 import {LayoutComponent} from "./layout.component";
 import {RouterModule} from "@angular/router";
 import {MatIconModule} from "@angular/material/icon";
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
-  declarations: [LayoutComponent],
+  declarations: [LayoutComponent, HeaderComponent],
     imports: [
         CommonModule,
         RouterModule,
