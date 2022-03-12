@@ -7,6 +7,7 @@ import {RouterModule} from "@angular/router";
 import {LayoutModule} from "./layout/layout.module";
 import {AppRoutingModule} from "./app-routing.module";
 import { MatIconModule } from '@angular/material/icon';
+import {MatCardModule} from "@angular/material/card";
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { MatIconModule } from '@angular/material/icon';
     RouterModule,
     LayoutModule,
     AppRoutingModule,
-    MatIconModule
+    MatIconModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
