@@ -28,5 +28,6 @@ export const routes = [
       {path: '', component: WorkgroupComponent}
     ]},
   {path: 'register', component: RegisterComponent},
-  {path: 'team', component: WorkgroupComponent}
+  {path: 'grupos', component: WorkgroupComponent}
+
 ];

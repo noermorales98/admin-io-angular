@@ -8,6 +8,7 @@ import {LayoutModule} from "./layout/layout.module";
 import {AppRoutingModule} from "./app-routing.module";
 import { MatIconModule } from '@angular/material/icon';
 import {MatCardModule} from "@angular/material/card";
+import {HttpClientModule} from "@angular/common/http";
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import {MatCardModule} from "@angular/material/card";
     LayoutModule,
     AppRoutingModule,
     MatIconModule,
-    MatCardModule
+    MatCardModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

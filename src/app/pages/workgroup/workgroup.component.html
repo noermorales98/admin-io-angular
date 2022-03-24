@@ -1,5 +1,12 @@
 <body>
+<!--asa-->
 <div class="container">
+  <li class="list-group-item" *ngFor="let mensaje of admins | async">
+
+    <h2> {{mensaje.name_administrator}}</h2>
+    <p>{{mensaje.email_administrator}}</p>
+
+  </li>
   <div class="pendientes">
     <h3>Tareas pendientes</h3>
     <mat-card class="example-card">
