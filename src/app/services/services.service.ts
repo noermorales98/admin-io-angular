@@ -27,8 +27,8 @@ export class ServicesService {
     return this.http.get<Administrador>(this.REST_API_SERVER + "getWorks").pipe();
   }
 
-  public delete(work: number): Observable<any>{
-    return this.http.delete(this.REST_API_SERVER + "deleteWork?id=" + work);
+  public delete(work: any): Observable<any>{
+    return this.http.post(this.REST_API_SERVER + "deleteWork", work);
   }
 
   public guardar(name_work: any): Observable<any>{

@@ -12,6 +12,7 @@ import { CreateTaskComponent } from './create-task/create-task.component';
 import {MatFormFieldModule} from "@angular/material/form-field";
 import {MatInputModule} from "@angular/material/input";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import {MatTabsModule} from "@angular/material/tabs";
 
 
 
@@ -19,20 +20,21 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms";
   declarations: [
     CreateTaskComponent
   ],
-    imports: [
-        CommonModule,
-        AboutModule,
-        ContactModule,
-        CreateWorkgroupModule,
-        InfoTaskModule,
-        RegisterModule,
-        ServicesModule,
-        WorkgroupModule,
-        RouterModule,
-        MatFormFieldModule,
-        MatInputModule,
-        FormsModule,
-        ReactiveFormsModule
-    ]
+  imports: [
+    CommonModule,
+    AboutModule,
+    ContactModule,
+    CreateWorkgroupModule,
+    InfoTaskModule,
+    RegisterModule,
+    ServicesModule,
+    WorkgroupModule,
+    RouterModule,
+    MatFormFieldModule,
+    MatInputModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MatTabsModule
+  ]
 })
 export class PagesModule { }

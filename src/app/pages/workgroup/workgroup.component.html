@@ -45,7 +45,7 @@
             <td>{{item.apellido}}</td>
             <td>{{item.edad}}</td>
             <td>
-              <button type="button" class="btn btn-danger">Eliminar</button>
+              <button type="button" (click)="delete(item.id)" class="btn btn-danger">Eliminar</button>
             </td>
           </tr>
           </tbody>

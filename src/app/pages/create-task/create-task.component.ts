@@ -25,9 +25,12 @@ export class CreateTaskComponent implements OnInit {
     this.work = this.fb.group({
       name_work:[''],
       description_work: [''],
+      process_work: [''],
       priority_work: [''],
       startdate_work: Date,
     });
+
+    this.http.work().subscribe(tareas=>this.tareas.push(...tareas))
   }
 
   enviar(){
@@ -48,5 +51,12 @@ export class CreateTaskComponent implements OnInit {
     console.log("nombre: " + usr);
     console.log("descripcion: " + password);
     console.log("fecha:" + this.startdate_work)
+  }
+
+  delete(work: any) {
+    this.http.delete(work).subscribe(res=>{
+      this.work.pop(res);
+    });
+    window.location.reload();
   }
 }
