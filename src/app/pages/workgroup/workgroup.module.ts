@@ -4,6 +4,7 @@ import {WorkgroupComponent} from "./workgroup.component";
 import {RouterModule} from "@angular/router";
 import {MatCardModule} from "@angular/material/card";
 import {MatButtonModule} from "@angular/material/button";
+import {MatTabsModule} from "@angular/material/tabs";
 
 
 
@@ -17,7 +18,8 @@ import {MatButtonModule} from "@angular/material/button";
     CommonModule,
     RouterModule,
     MatCardModule,
-    MatButtonModule
+    MatButtonModule,
+    MatTabsModule
   ]
 })
 export class WorkgroupModule { }

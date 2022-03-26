@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import {ServicesService} from "../../services/services.service";
 import {HttpClient} from "@angular/common/http";
 import {Administrador} from "../../models/administrador";
@@ -26,11 +26,15 @@ public valor1:[]=[];
   }
 
   delete(work: any){
-    console.log(work)
     this.http.delete(work).subscribe(res=>{
       this.works.pop(res);
-    },
-    error => {console.log(error)}
-    )
+    })
   }
+
+  save(work: any){
+    this.http.guardar(work).subscribe(res=>{
+      this.works.pop(res);
+    })
+  }
+
 }

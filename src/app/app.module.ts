@@ -9,6 +9,7 @@ import {AppRoutingModule} from "./app-routing.module";
 import { MatIconModule } from '@angular/material/icon';
 import {MatCardModule} from "@angular/material/card";
 import {HttpClientModule} from "@angular/common/http";
+import {NoopAnimationsModule} from "@angular/platform-browser/animations";
 
 
 @NgModule({
@@ -22,7 +23,9 @@ import {HttpClientModule} from "@angular/common/http";
     AppRoutingModule,
     MatIconModule,
     MatCardModule,
-    HttpClientModule
+    HttpClientModule,
+    NoopAnimationsModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]

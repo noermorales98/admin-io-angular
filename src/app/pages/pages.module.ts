@@ -8,21 +8,31 @@ import {RegisterModule} from "./register/register.module";
 import {ServicesModule} from "./services/services.module";
 import {WorkgroupModule} from "./workgroup/workgroup.module";
 import {RouterModule} from "@angular/router";
+import { CreateTaskComponent } from './create-task/create-task.component';
+import {MatFormFieldModule} from "@angular/material/form-field";
+import {MatInputModule} from "@angular/material/input";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 
 
 
 @NgModule({
-  declarations: [],
-  imports: [
-    CommonModule,
-    AboutModule,
-    ContactModule,
-    CreateWorkgroupModule,
-    InfoTaskModule,
-    RegisterModule,
-    ServicesModule,
-    WorkgroupModule,
-    RouterModule
-  ]
+  declarations: [
+    CreateTaskComponent
+  ],
+    imports: [
+        CommonModule,
+        AboutModule,
+        ContactModule,
+        CreateWorkgroupModule,
+        InfoTaskModule,
+        RegisterModule,
+        ServicesModule,
+        WorkgroupModule,
+        RouterModule,
+        MatFormFieldModule,
+        MatInputModule,
+        FormsModule,
+        ReactiveFormsModule
+    ]
 })
 export class PagesModule { }

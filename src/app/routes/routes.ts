@@ -9,6 +9,7 @@ import {RegisterComponent} from "../pages/register/register.component";
 import {ServicesComponent} from "../pages/services/services.component";
 import {WorkgroupComponent} from "../pages/workgroup/workgroup.component";
 import {HeaderComponent} from "../layout/header/header.component";
+import {CreateTaskComponent} from "../pages/create-task/create-task.component";
 
 
 export const routes = [
@@ -28,6 +29,7 @@ export const routes = [
       {path: '', component: WorkgroupComponent}
     ]},
   {path: 'register', component: RegisterComponent},
-  {path: 'grupos', component: WorkgroupComponent}
+  {path: 'grupos', component: WorkgroupComponent},
+  {path: 'task', component: CreateTaskComponent}
 
 ];

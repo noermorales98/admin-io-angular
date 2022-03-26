@@ -31,6 +31,9 @@ export class ServicesService {
     return this.http.delete(this.REST_API_SERVER + "deleteWork?id=" + work);
   }
 
+  public guardar(name_work: any): Observable<any>{
+    return this.http.post(this.REST_API_SERVER + "createWork", name_work);
+  }
 
 
 }

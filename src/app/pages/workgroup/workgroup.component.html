@@ -1,57 +1,165 @@
-<body>
-<!--asa-->
-<div class="container">
+<mat-tab-group dynamicHeight>
 
-  <div class="pendientes">
-    <h3>Tareas pendientes</h3>
-    <div  *ngFor="let lista of tareas">
-      <mat-card class="example-card" *ngIf="lista.process_work =='pendiente'">
-        <mat-card-title>{{lista.id_work}}</mat-card-title>
-        <button ng-click="delete(lista.id_work)">Borrar</button>
-        <mat-card-subtitle>{{lista.enddate_work}}</mat-card-subtitle>
-        <mat-card-content>
-          <p>{{lista.description_work}}</p>
-        </mat-card-content>
-        <mat-card-actions>
-          <button mat-button>{{lista.priority_work}}</button>
-          <button mat-button>{{lista.process_work}}</button>
-        </mat-card-actions>
-      </mat-card>
+
+  <mat-tab-group dynamicHeight>
+
+    <mat-tab label="Crear">
+      <div style="padding: 15%;">
+        <h1>Crear persona</h1>
+        <form>
+          <div class="form-group">
+            <label>Nombre</label>
+            <input type="text" class="form-control" maxlength="20">
+          </div>
+          <div class="form-group">
+            <label>Apellido</label>
+            <input class="form-control" maxlength="50">
+          </div>
+          <div class="form-group">
+            <label>Edad</label>
+            <input type="number" class="form-control">
+          </div>
+          <button type="submit" class="btn btn-primary">Guardar</button>
+        </form>
+      </div>
+    </mat-tab>
+
+
+    <mat-tab label="Listar">
+
+      <div style="padding: 10%;">
+        <table class="table">
+          <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Apellido</th>
+            <th scope="col">Edad</th>
+            <th></th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr *ngFor="let item of works">
+            <th scope="row">{{item.id}}</th>
+            <td>{{item.nombre}}</td>
+            <td>{{item.apellido}}</td>
+            <td>{{item.edad}}</td>
+            <td>
+              <button type="button" class="btn btn-danger">Eliminar</button>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+
+      </div>
+
+
+
+    </mat-tab>
+
+
+
+
+
+  </mat-tab-group>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <main>
+    <router-outlet></router-outlet>
+  </main>
+
+  <mat-tab label="Crear">
+    <div style="padding: 15%;">
+      <h1>Crear persona</h1>
+      <form novalidate>
+        <div class="form-group">
+          <label>Nombre</label>
+          <input type="text" formControlName="nombre" class="form-control" maxlength="20">
+        </div>
+        <div class="form-group">
+          <label>Apellido</label>
+          <input class="form-control" formControlName="apellido" maxlength="50">
+        </div>
+        <div class="form-group">
+          <label>Edad</label>
+          <input type="number" formControlName="edad" class="form-control">
+        </div>
+
+        <button type="submit" class="btn btn-primary">Guardar</button>
+      </form>
+    </div>
+  </mat-tab>
+
+
+  <mat-tab label="Listar">
+
+    <div style="padding: 10%;">
+      <table class="table">
+        <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Nombre</th>
+          <th scope="col">Apellido</th>
+          <th scope="col">Edad</th>
+          <th></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let item of tareas">
+          <th scope="row">{{item.id_work}}</th>
+          <td>{{item.name_work}}</td>
+          <td>{{item.process_work}}</td>
+          <td>{{item.description_work}}</td>
+          <td>
+            <button type="button" class="btn btn-danger" (click)='delete(item.id_work)'>Eliminar</button>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+
     </div>
 
-  </div>
-  <div class="encurso">
-    <h3>En curso</h3>
-    <div  *ngFor="let lista of tareas">
-      <mat-card class="example-card" *ngIf="lista.process_work =='encurso'">
-        <mat-card-title>{{lista.name_work}}</mat-card-title>
-        <mat-card-subtitle>{{lista.enddate_work}}</mat-card-subtitle>
-        <button (click)="delete(lista.id_work)">borrar</button>
-        <mat-card-content>
-          <p>{{lista.description_work}}</p>
-        </mat-card-content>
-        <mat-card-actions>
-          <button mat-button>{{lista.priority_work}}</button>
-          <button mat-button>{{lista.process_work}}</button>
-        </mat-card-actions>
-      </mat-card>
-    </div>
-  </div>
-  <div class="terminados">
-    <h3>Trabajos terminados</h3>
-    <div  *ngFor="let lista of tareas">
-      <mat-card class="example-card" *ngIf="lista.process_work =='finalizado'">
-        <mat-card-title>{{lista.name_work}}</mat-card-title>
-        <mat-card-subtitle>{{lista.enddate_work}}</mat-card-subtitle>
-        <mat-card-content>
-          <p>{{lista.description_work}}</p>
-        </mat-card-content>
-        <mat-card-actions>
-          <button mat-button>{{lista.priority_work}}</button>
 
-        </mat-card-actions>
-      </mat-card>
-    </div>
-  </div>
-</div>
-</body>
+
+  </mat-tab>
+
+
+
+
+
+</mat-tab-group>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<main>
+  <router-outlet></router-outlet>
+</main>
