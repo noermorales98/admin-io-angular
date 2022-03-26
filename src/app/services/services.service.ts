@@ -2,6 +2,8 @@ import { Injectable } from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 import {api} from "../../environments/api";
 import {Observable} from "rxjs";
+import {map} from 'rxjs/Operators'
+import {Administrador} from "../models/administrador";
 
 @Injectable({
   providedIn: 'root',
@@ -14,7 +16,21 @@ export class ServicesService {
 
   constructor(private http: HttpClient) { }
 
-  public getAdmins():Observable<any>{
+  /*public getAdmins():Observable<any>{
     return this.http.get(this.REST_API_SERVER + "getAdmins")
   }
+  public getWorks():Observable<any>{
+    return this.http.get(this.REST_API_SERVER + "getWorks")
+  }
+*/
+  work(): Observable<any>{
+    return this.http.get<Administrador>(this.REST_API_SERVER + "getWorks").pipe();
+  }
+
+  public delete(work: number): Observable<any>{
+    return this.http.delete(this.REST_API_SERVER + "deleteWork?id=" + work);
+  }
+
+
+
 }

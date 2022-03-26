@@ -14,5 +14,26 @@ h3{
 }
 
 mat-card{
-  width: 100%;
+  width: 300px;
+  padding: 10px;
+  text-align: left;
+  margin-top: 10px;
+}
+
+mat-card-header{
+  text-align: left;
+  display: flex;
+
+}
+
+.pendientes{
+  margin: 30px;
+}
+
+.encurso{
+  margin: 30px;
+}
+
+.terminados{
+  margin: 30px;
 }
