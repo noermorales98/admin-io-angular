@@ -35,5 +35,8 @@ export class ServicesService {
     return this.http.post(this.REST_API_SERVER + "createWork", name_work);
   }
 
+  public createUser(user: any): Observable<any>{
+    return this.http.post(this.REST_API_SERVER + "createMember", user);
+  }
 
 }

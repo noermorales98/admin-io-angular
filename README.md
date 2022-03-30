@@ -1,6 +1,9 @@
 # Admin
 Admin.io FRONTEND
 ### Nombre del proyecto: Admin.io
+
+
+
 ## **Integrantes:**
 - **Noeli Rodriguez Morales**
 - **Aldo Aaron Meza Moreno**

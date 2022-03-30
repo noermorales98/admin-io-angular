@@ -29,7 +29,7 @@ export const routes = [
       {path: '', component: WorkgroupComponent}
     ]},
   {path: 'register', component: RegisterComponent},
-  {path: 'grupos', component: WorkgroupComponent},
+  //{path: 'grupos', component: WorkgroupComponent},
   {path: 'task', component: CreateTaskComponent}
 
 ];

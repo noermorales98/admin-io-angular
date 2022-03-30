@@ -13,12 +13,15 @@
     <!--<label for="show" class="close-btn fas fa-times" title="close"></label>-->
     <div class="text">Registrate</div>
     <div id="mensaje"><p>Ingresa tus credenciales para crear usuario</p></div>
-    <form action="#">
+    <form action="#" [formGroup]="user" (ngSubmit)="enviar()" novalidate>
       <div class="data">
-        <input type="email" placeholder="Ingresa tu usuario" required>
+        <input type="text" formControlName="name_member" placeholder="Ingresa tu usuario" required>
       </div>
       <div class="data">
-        <input type="password" placeholder="Contraseña" required>
+        <input type="email" formControlName="email_member" placeholder="Ingresa tu correo" required>
+      </div>
+      <div class="data">
+        <input type="password" formControlName="password_member" placeholder="Contraseña" required>
       </div>
       <div class="data">
         <input type="password" placeholder="Repita la contraseña" required>
