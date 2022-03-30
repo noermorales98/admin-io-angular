@@ -36,14 +36,14 @@
     </mat-tab>
     <mat-tab label="Crear">
       <div style="padding: 15%;">
-        <h1>Crear persona</h1>
+        <h1>Crear tarea</h1>
         <form [formGroup]="work" (ngSubmit)="enviar()" novalidate>
           <div class="form-group">
             <label>Nombre</label>
             <input type="text" formControlName="name_work" class="form-control" maxlength="20">
           </div>
           <div class="form-group">
-            <label>Description</label>
+            <label>Descripción</label>
             <input type="text" class="form-control" formControlName="description_work" maxlength="50">
           </div>
           <div class="form-group">

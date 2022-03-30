@@ -39,4 +39,8 @@ export class ServicesService {
     return this.http.post(this.REST_API_SERVER + "createMember", user);
   }
 
+  public login(user: any): Observable<any>{
+    return this.http.get(this.REST_API_SERVER + "getMember", user);
+  }
+
 }
