@@ -12,6 +12,7 @@ Admin.io FRONTEND
 
 ### Desarrolladores FRONTED
 - **Noeli Rodriguez Morales**
+- Aldo Aaron Meza Moreno
 - Sebastian Emiliano
 - Viviana Lopez Mendez
 
