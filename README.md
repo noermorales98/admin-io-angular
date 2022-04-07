@@ -2,17 +2,6 @@
 Admin.io FRONTEND
 ### Nombre del proyecto: Admin.io
 
+Hecha con Angular 13
 
-
-## **Integrantes:**
-- **Noeli Rodriguez Morales**
-- **Aldo Aaron Meza Moreno**
-- Sebastian Emiliano Romero Martinez
-- Viviana Lopez Mendez
-
-### Desarrolladores FRONTED
-- **Noeli Rodriguez Morales**
-- Aldo Aaron Meza Moreno
-- Sebastian Emiliano
-- Viviana Lopez Mendez
-
+![alt text](https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/1200px-Image_created_with_a_mobile_phone.png)
